@@ -1,0 +1,5 @@
+package com.microservice.moviecatalogservice.resources;
+
+public class MovieBusinessService {
+
+}

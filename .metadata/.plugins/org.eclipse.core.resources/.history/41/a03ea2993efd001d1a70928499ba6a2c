@@ -1,0 +1,9 @@
+package com.microservice.moviecatalogservice.resources;
+
+import java.util.ArrayList;
+
+public class MovieBusinessService {
+	ArrayList<Movie> movie = new ArrayList <Movie>() {
+		new Movie ("");
+	};
+}

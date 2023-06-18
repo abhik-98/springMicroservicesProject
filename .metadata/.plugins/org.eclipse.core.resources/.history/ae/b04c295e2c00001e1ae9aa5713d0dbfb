@@ -1,0 +1,21 @@
+package com.microservice.moviecatalogservice.resources;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/catalog")
+public class MovieController {
+	
+	@Autowired
+	MovieBusinessService movieBusinessService;
+	
+	@RequestMapping("/{id}")
+	@ResponseBody
+	public Movie getMovie(@PathVariable Integer id) {
+		return movieBusinessService.getMovie(id);
+	}
+}

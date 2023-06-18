@@ -1,0 +1,14 @@
+/**
+ * 
+ */
+package com.microservice.moviecatalogservice.resources;
+
+import org.springframework.data.repository.CrudRepository;
+
+/**
+ * @author abhis
+ *
+ */
+public interface MovieRepository extends CrudRepository<T, ID> {
+
+}

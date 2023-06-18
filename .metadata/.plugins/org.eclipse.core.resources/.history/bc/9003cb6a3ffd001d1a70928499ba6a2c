@@ -1,0 +1,12 @@
+package com.microservice.moviecatalogservice.resources;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class MovieBusinessService {
+	ArrayList<Movie> movie = new ArrayList <Movie>(Arrays.asList(
+			new Movie(12,"vroom"),
+			new Movie(13,"Jane tu ya jane na"),
+			new Movie(14,"Fast X")));
+	
+}

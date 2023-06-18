@@ -1,0 +1,33 @@
+package com.microservice.moviecatalogservice.resources;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
+public class Movie {
+	
+	@Id
+	private Integer movieId;
+	private String movieName;
+	public Integer getMovieId() {
+		return movieId;
+	}
+	public void setMovieId(Integer movieId) {
+		this.movieId = movieId;
+	}
+	public String getMovieName() {
+		return movieName;
+	}
+	public void setMovieName(String movieName) {
+		this.movieName = movieName;
+	}
+	public Movie(Integer movieId, String movieName) {
+		super();
+		this.movieId = movieId;
+		this.movieName = movieName;
+	}
+	@Override
+	public String toString() {
+		return "Movie [movieId=" + movieId + ", movieName=" + movieName + "]";
+	} 
+}

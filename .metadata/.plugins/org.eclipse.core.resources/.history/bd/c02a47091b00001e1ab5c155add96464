@@ -1,0 +1,5 @@
+package com.microservices.movieratingservice.resouce;
+
+public class RatingController {
+
+}

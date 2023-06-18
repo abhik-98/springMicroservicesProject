@@ -1,0 +1,6 @@
+package com.microservice.moviecatalogservice.resources;
+
+@res
+public class MovieController {
+
+}
